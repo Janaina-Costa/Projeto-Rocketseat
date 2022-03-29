@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- iconesa -->
+    <link rel="stylesheet" href="assets/font/style.css">
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,19 +17,32 @@
 <body>
     <header id="header">
         <nav class="container">
-           <h1> <a href="#" class="logo">space<span>tattoo</span>.</a></h1>
-            <div class="menu">...</div>
+           <a href="#" class="logo">space<span>tattoo</span>.</a>
+            <!--Menu  -->
+           <div class="menu">
+                <ul class="grid">
+                    <li><a class="title"  href="#home">Inicio</a></li>
+                    <li><a class="title" href="#about">Sobre</a></li>
+                    <li><a class="title" href="#services">Serviços</a></li>
+                    <li><a class="title" href="#testimonials">Depoimentos</a></li>
+                    <li><a class="title" href="#contact">Contatos</a></li>
+                </ul>
+            </div>  
+            <!-- /menu -->
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
         </nav>
     </header>
 
-    <main>        
+    <main>   
+             <!--prinicpal  -->
         <section class="section" id="home">
             <div class="container grid">
              <div class="image">
                 <img src="https://images.unsplash.com/photo-1597852075234-fd721ac361d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Pessoa tatuando um braço">
              </div>
                 <div class="text">
-                    <h1>Personalidade a flor da pele</h1>
+                    <h2 class="title">Personalidade a flor da pele</h2>
                         <p>Lorem ipsum dolor sit amet consectetur 
                         adipisicing elit. Sit corporis doloribus 
                         ullam nisi eaque blanditiis fugit laboriosam
@@ -38,13 +53,82 @@
             </div>
         </section>
         
-
         <div class="divider-1"></div>
-        <section class="section">
-            <div class="container">Outra sessão</div>
+        
+        <!-- sobre a loja -->
+        <section class="section" id="about">
+            <div class="container grid">
+                <div class="image">
+                    <img 
+                    src="https://images.unsplash.com/photo-1608666599953-b951163495f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGF0dG9vJTIwc3R1ZGlvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" 
+                    alt="estudio de tatuagem">
+                </div>
+                <div class="text">
+                    <h2 class="title">Sobre nós</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Sit corporis doloribus 
+                        ullam nisi eaque blanditiis fugit laboriosam
+                        voluptas totam. Pariatur iusto accusamus.
+                    </p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Sit corporis doloribus 
+                        ullam nisi eaque blanditiis fugit laboriosam
+                        voluptas totam. Pariatur iusto accusamus.
+                        ullam nisi eaque blanditiis fugit laboriosam
+                        voluptas totam. Pariatur iusto accusamus.
+                    </p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Sit corporis doloribus 
+                        ullam nisi eaque blanditiis fugit laboriosam
+                        voluptas totam. Pariatur iusto accusamus.
+                    </p>
+                    <br>
+                </div>
+            </div>
         </section>
+        <div class="divider-2 "></div>
+
+        <!-- cards de serviços -->
+        <section class="section" id="services">
+            <div class="container grid">
+                <div class="text">
+                    <header>
+                        <h2 class="title">Serviços</h2>
+                        <p>
+                            Com mais de 10 anos no mercado, a <strong>SpaceTattoo</strong>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Debitis sint nulla illum quod doloremque totam cupiditate placeat.
+                        </p>
+                    </header>
+                    <div class="cards grid">
+                        <div class="card">
+                            <div class="icon-tattoo"><img src="./assets/font/fonts/tattoo.svg" alt="pistola de tatuagem"></div>
+                            <h3 class="title">Tatuagem</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Neque, odio. Labore laboriosam ea quasi consequatur, 
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="icon-tattoo"><img src="./assets/font/fonts/piercing.svg" alt="pistola de tatuagem"></div>
+                            <h3 class="title">Body Piercing</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Neque, odio. Labore laboriosam ea quasi consequatur, 
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+       
+
+
+
     </main>
 
-    
+    <script src="main.js"></script>
 </body>
 </html>
